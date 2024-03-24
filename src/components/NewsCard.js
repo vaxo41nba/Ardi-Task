@@ -16,6 +16,7 @@ export default function NewsCard({post, newsToDisplay, modifyNews}) {
   const [modalVisible, setModalVisible] = useState(false);
 
   const toggleModal = bool => setModalVisible(bool);
+
   const handlePress = () => {
     if (modalVisible) toggleModal(false);
     else navigation.navigate('Post', {post});
